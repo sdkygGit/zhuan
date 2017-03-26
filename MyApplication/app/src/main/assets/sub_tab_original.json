@@ -1,0 +1,83 @@
+[
+  {
+    "banner": {
+      "catalog": 1,
+      "href": "https://www.oschina.net/action/apiv2//banner?catalog=1"
+    },
+    "fixed": false,
+    "href": "https://www.oschina.net/action/apiv2/sub_list?token=d6112fa662bc4bf21084670a857fbd20",
+    "name": "推荐",
+    "needLogin": false,
+    "isActived": true,
+    "order": 1,
+    "subtype": 1,
+    "token": "d6112fa662bc4bf21084670a857fbd20",
+    "type": 6
+  },
+  {
+    "fixed": false,
+    "href": "https://www.oschina.net/action/apiv2/sub_list?token=df985be3c5d5449f8dfb47e06e098ef9",
+    "name": "热点",
+    "needLogin": false,
+    "isActived": true,
+    "order": 3,
+    "subtype": 4,
+    "token": "df985be3c5d5449f8dfb47e06e098ef9",
+    "type": 3
+  },
+  {
+    "fixed": false,
+    "href": "https://www.oschina.net/action/apiv2/sub_list?token=df985be3c5d5449f8dfb47e06e098ef9",
+    "name": "时尚",
+    "needLogin": false,
+    "isActived": true,
+    "order": 3,
+    "subtype": 4,
+    "token": "df985be3c5d5449f8dfb47e06e098ef9",
+    "type": 3
+  },
+  {
+    "fixed": false,
+    "href": "https://www.oschina.net/action/apiv2/sub_list?token=df985be3c5d5449f8dfb47e06e098ef9",
+    "name": "科技",
+    "needLogin": false,
+    "isActived": true,
+    "order": 3,
+    "subtype": 4,
+    "token": "df985be3c5d5449f8dfb47e06e098ef9",
+    "type": 3
+  },
+  {
+    "fixed": false,
+    "href": "https://www.oschina.net/action/apiv2/sub_list?token=df985be3c5d5449f8dfb47e06e098ef9",
+    "name": "体育",
+    "needLogin": false,
+    "isActived": true,
+    "order": 3,
+    "subtype": 4,
+    "token": "df985be3c5d5449f8dfb47e06e098ef9",
+    "type": 3
+  },
+  {
+    "fixed": false,
+    "href": "https://www.oschina.net/action/apiv2/sub_list?token=df985be3c5d5449f8dfb47e06e098ef9",
+    "name": "汽车",
+    "needLogin": false,
+    "isActived": true,
+    "order": 3,
+    "subtype": 4,
+    "token": "df985be3c5d5449f8dfb47e06e098ef9",
+    "type": 3
+  },
+  {
+    "fixed": false,
+    "href": "https://www.oschina.net/action/apiv2/sub_list?token=df985be3c5d5449f8dfb47e06e098ef9",
+    "name": "社会",
+    "needLogin": false,
+    "isActived": true,
+    "order": 3,
+    "subtype": 4,
+    "token": "df985be3c5d5449f8dfb47e06e098ef9",
+    "type": 3
+  }
+]

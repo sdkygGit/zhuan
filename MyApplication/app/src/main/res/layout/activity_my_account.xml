@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background"
+    tools:context="com.zhuanworld.dev.activity.MyAccountActivity">
+    <include layout="@layout/title_head_login_forget"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="￥ 金额（元）"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#808080"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="0.00"
+        android:gravity="center"
+        android:background="@color/white"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/my_account_ti_xian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提现"
+        android:background="@drawable/shape_button_certification"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <RelativeLayout
+        android:id="@+id/add_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/my_account_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_wodezhanghu"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="添加银行卡"
+            android:layout_toRightOf="@id/my_account_icon"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_head_login_forget"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray_background">
+        <com.zhuanworld.dev.widget.CircleImageView
+            android:id="@+id/my_icon_personal_data"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/lunboguanggao_test"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="已邀请好友：000（人）"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/contacts_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white">
+        <RadioButton
+            android:id="@+id/contacts_ordinary"
+            android:checked="true"
+            android:text="普通会员"
+            android:textColor="@color/white"
+            style="@style/Income_fragment_radio_button"
+            android:layout_marginRight="15dp"/>
+        <RadioButton
+            android:id="@+id/contacts_gold"
+            style="@style/Income_fragment_radio_button"
+            android:text="黄金会员"
+            />
+        <RadioButton
+            android:id="@+id/contacts_platinum"
+            style="@style/Income_fragment_radio_button"
+            android:text="铂金会员"
+            android:layout_marginRight="15dp"
+            />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/contacts_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

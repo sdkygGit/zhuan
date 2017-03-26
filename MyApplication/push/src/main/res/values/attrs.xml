@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullUpViewGroup">
+        <attr name="listType" format="enum">
+            <enum name="listView" value="1"></enum>
+            <enum name="recyclerView" value="2"></enum>
+        </attr>
+    </declare-styleable>
+</resources>

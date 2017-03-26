@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background"
+    tools:context="com.zhuanworld.dev.activity.ContactUsActivity">
+    <include layout="@layout/title_head_login_forget"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="QQ："
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="123456"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="end|center_vertical"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="微信："
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="123456"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="end|center_vertical"/>
+    </RelativeLayout><RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="客服："
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="123456"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="end|center_vertical"/>
+    </RelativeLayout>
+
+</LinearLayout>

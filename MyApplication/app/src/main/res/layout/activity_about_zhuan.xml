@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_zhuan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuanworld.dev.activity.AboutZhuanActivity">
+    <include layout="@layout/title_head_login_forget"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="赚赚介绍"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚赚"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+</LinearLayout>
