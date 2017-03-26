@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="300dp"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/pay_pass_dialog_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="end"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/input_pay_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="请输入支付密码"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+    <com.zhuanworld.dev.view.PasswordInputView
+        android:id="@+id/pay_pass_dialog_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:cursorVisible="false"
+        android:background="@color/white"
+        android:inputType="number"
+        android:maxLength="6"
+        app:pivBorderColor="@color/black"
+        app:pivBorderRadius="2dp"
+        app:pivBorderWidth="1px"
+        app:pivPasswordColor="@color/black"
+        app:pivPasswordLength="6"
+        app:pivPasswordWidth="2dp"/>
+
+</LinearLayout>

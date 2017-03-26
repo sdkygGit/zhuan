@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_personal_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context="com.zhuanworld.dev.my.myfragment.activity.PersonalDataActivity">
+    <include layout="@layout/title_head_login_forget"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/action_bar_bg">
+        <com.zhuanworld.dev.widget.CircleImageView
+            android:id="@+id/my_icon_personal_data"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="黄金会员"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="ID:123456789"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_nickName_personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="我的昵称"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/btn_return_gary"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="我的等级"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="黄金会员"
+            android:textSize="18sp"
+            android:gravity="center_vertical|end"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="我的ID"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="123456"
+            android:textSize="18sp"
+            android:gravity="center_vertical|end"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_certification_personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="实名认证"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/btn_return_gary"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

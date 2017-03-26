@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_nick_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuanworld.dev.my.myfragment.activity.ChangeNickNameActivity">
+    <include layout="@layout/title_head_login_forget"
+        android:id="@+id/title_change_nick_name"/>
+    <EditText
+        android:id="@+id/editText_change_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/title_change_nick_name"
+        android:background="@null"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/editText_change_nick_name"/>
+
+</RelativeLayout>

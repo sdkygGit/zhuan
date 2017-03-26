@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ZhuanWorld</string>
+    <string name="action_settings">Settings</string>
+    <string name="copy_success">复制成功</string>
+    <string name="network_isnot_available">网络连接已断开</string>
+    <string name="Phone_number_cannot_be_empty">手机号不能为空</string>
+    <string name="Password_cannot_be_empty">密码不能为空</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+</resources>

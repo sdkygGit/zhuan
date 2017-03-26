@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhuanworld.dev.widget.FitWindowFramelayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#FFF"
+        android:paddingTop="25dp">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/layout_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:elevation="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <com.zhuanworld.dev.view.RichEditText
+                    android:id="@+id/edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="start|left|top"
+                    android:hint="今天想动弹什么?"
+                    android:minLines="4"
+                    android:paddingBottom="32dp"
+                    android:textColor="#111111"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/ic_tweet_indicator_selector"
+                    android:gravity="center"
+                    android:minWidth="40dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="0dp"
+                    android:textColor="#111111"
+                    android:textSize="14sp"
+                    android:visibility="invisible"
+                    tools:text="12" />
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.zhuanworld.dev.widget.TweetPicturesPreviewer
+                android:id="@+id/recycler_images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/lay_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#10000000"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/txt_about_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#111111"
+                        android:textSize="16sp"
+                        tools:text="Large Text" />
+
+                    <TextView
+                        android:id="@+id/txt_about_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="4dp"
+                        android:maxLines="3"
+                        android:minLines="1"
+                        android:textColor="#6a6a6a"
+                        android:textSize="13sp"
+                        tools:text="New Text" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </FrameLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#24cf5f"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="弹一弹"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/icon_send"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/tweet_publish_send" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFF"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_commit_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="0dp"
+            android:text="同时评论"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c8c7cc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_material"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_tweet_picture_normal" />
+
+            <ImageView
+                android:id="@+id/iv_mention"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_material"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_tweet_mention_normal"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_material"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_tweet_topic_normal"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_emoji"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_material"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_tweet_expression_normal"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#BBB" />
+
+        <!--<fragment-->
+        <!--android:id="@+id/frag_emoji_keyboard"-->
+        <!--class="net.oschina.app.emoji.EmojiKeyboardFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="bottom" />-->
+
+    </LinearLayout>
+
+</com.zhuanworld.dev.widget.FitWindowFramelayout>
